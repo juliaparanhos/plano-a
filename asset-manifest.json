@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/plano-a/static/css/main.f52abeb8.chunk.css",
+    "main.js": "/plano-a/static/js/main.aa07c73c.chunk.js",
+    "main.js.map": "/plano-a/static/js/main.aa07c73c.chunk.js.map",
+    "runtime~main.js": "/plano-a/static/js/runtime~main.37e9c892.js",
+    "runtime~main.js.map": "/plano-a/static/js/runtime~main.37e9c892.js.map",
+    "static/css/2.e20586d2.chunk.css": "/plano-a/static/css/2.e20586d2.chunk.css",
+    "static/js/2.7ee88d40.chunk.js": "/plano-a/static/js/2.7ee88d40.chunk.js",
+    "static/js/2.7ee88d40.chunk.js.map": "/plano-a/static/js/2.7ee88d40.chunk.js.map",
+    "index.html": "/plano-a/index.html",
+    "precache-manifest.b256de69b520c775a64c6954e81c7450.js": "/plano-a/precache-manifest.b256de69b520c775a64c6954e81c7450.js",
+    "service-worker.js": "/plano-a/service-worker.js",
+    "static/css/2.e20586d2.chunk.css.map": "/plano-a/static/css/2.e20586d2.chunk.css.map",
+    "static/css/main.f52abeb8.chunk.css.map": "/plano-a/static/css/main.f52abeb8.chunk.css.map",
+    "static/media/background_financial.svg": "/plano-a/static/media/background_financial.5f86f814.svg",
+    "static/media/banner.jpg": "/plano-a/static/media/banner.aa0ec6bc.jpg",
+    "static/media/favicon-planoa.png": "/plano-a/static/media/favicon-planoa.980fa4f4.png",
+    "static/media/paper-dashboard.scss?v=1.1.0": "/plano-a/static/media/nucleo-icons.f32ed5ad.eot",
+    "static/media/planoa.png": "/plano-a/static/media/planoa.3b027909.png"
+  }
+}
