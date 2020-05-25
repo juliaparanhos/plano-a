@@ -3,14 +3,16 @@ import TableEvents from "views/events/tableevents/TableEvents.jsx";
 import ViewEvent from "views/ViewEvent";
 import ViewProviders from "views/ViewProviders";
 import AddEvents from "views/AddEvents";
-import Details from "views/Details";
+import Details from "views/events/operation/Details.jsx";
 import CalendarEvent from "views/CalendarEvent";
 import Financial from "views/events/Financial";
 import InternalMenu from "views/interno/InternalMenu";
 import Team from "views/events/team/Team";
 import FornecedoresEvents from "views/events/providersevents/TableFonecedoresEvents.jsx";
+import StorageEvent from "views/events/operation/storage/StorageEvent.jsx";
 import AddProviders from "views/AddProviders";
 import ProfileProviders from "views/events/profileproviders/ProfileProviders.jsx";
+import formRating from "views/events/profileproviders/formRating.jsx";
 import DetailsProviders from "views/DetailsProviders";
 import Email from "views/Email";
 import Calendar from "views/Calendar";
@@ -60,6 +62,16 @@ var routes = [
   {
     path: "/info/fornecedor/id",
     component: ViewProviders,
+    layout: "/admin"
+  },
+  {
+    path: "/avaliar-fornecedor",
+    component: formRating,
+    layout: "/admin"
+  },
+  {
+    path: "/estoque-evento",
+    component: StorageEvent,
     layout: "/admin"
   },
   {
