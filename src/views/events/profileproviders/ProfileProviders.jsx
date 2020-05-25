@@ -110,13 +110,88 @@ class ProfileProviders extends React.Component {
                                     { this.state.activeTab == 1 ?  <><br/><p>Representante: User</p> <p>Cargo: Proprietário</p><p>Telefone: (xx) 00000-0000</p></>: null }
                                 </TabPane>
                                 <TabPane tabId="2">
-                                    { this.state.activeTab == 2 ?  <p>...</p>: null }
+                                    { this.state.activeTab == 2 ?  
+                                    <Table hover responsive>
+                                        <thead className="text-muted">
+                                            <tr>
+                                                <th className="p-1 text-center" style={{textAlign: "center", width:"8%;"}}>Nome</th>
+                                                <th className="p-1 text-center" style={{textAlign: "center", width:"10%;"}}>Estado</th>
+                                                <th className="p-1 text-center" style={{textAlign: "center", width:"25%;"}}>Cidade</th>
+                                                <th className="p-1 text-center" style={{textAlign: "center", width:"15%;"}}>Data</th>
+                                                <th className="p-1 text-center" style={{textAlign: "center", width:"15%;"}}>Avaliação</th>
+                                                <th className="p-1 text-center" style={{textAlign: "center", width:"15%;"}}>Comentários</th>
+                                                <th className="p-2 text-center" style={{textAlign: "center", width:"25%;"}}>Opções</th>
+                                            </tr>
+
+                                            <tr>
+                                                <th className="p-1">
+                                                    <input type="text" className="form-control form-control-sm text-center" name="sid" placeholder="Nome"/>
+                                                </th>
+                                                <th className="p-1">
+                                                    <select className="form-control form-control-sm text-center" style={{height: '26px'}}>
+                                                        <option >BA</option>
+                                                        <option> CE </option>
+                                                        <option> MG</option>
+                                                    </select>
+                                                    </th>
+                                                <th className="p-1">
+                                                    <input type="text" className="form-control form-control-sm text-center" name="snome" placeholder="Cidade"/>
+                                                </th>
+                                                <th className="p-1">
+                                                    <input type="text" className="form-control form-control-sm text-center" name="snome" placeholder="Data"/>
+                                                </th>
+                                                <th className="p-1">
+                                                    <input type="text" className="form-control form-control-sm text-center" name="scategoria" placeholder="Avaliação"/>
+                                                </th>
+                                                <th className="p-1">
+                                                    
+                                                </th> 
+                                                
+                                                <th className="p-1" style={{textAlign:'left'}}>
+                                                    <Button className="" size="sm" color="info" style={{marginRight: '5px'}}>
+                                                        <i className="fa fa-search"/>
+                                                    </Button>
+                                                    
+                                                    <a className="btn btn-danger btn-sm" href="#" id="remover" role="button" style={{marginRight: '-73px'}}>
+                                                        <i className="fa fa-trash"/>
+                                                    </a> 
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td className="text-center"> ABRH-BA </td>
+                                                <td className="text-center"> BA</td>
+                                                <td className="text-center">Salvador</td>
+                                                <td className="text-center"> 10/09/2020 - 15/09/2020</td>
+                                                <td className="text-center"> <Rating/> </td>
+                                                <td className="text-center"> Lógistica a desejar</td>
+                                                <td className="text-center">
+                                                    <Col className="" md="3" xs="3" style={{marginLeft: '8px'}}>
+                                                        <Link to="/admin/avaliar-fornecedor">
+                                                        <Button
+                                                            className="btn-round btn-icon"
+                                                            color="success"
+                                                            outline
+                                                            size="sm"
+                                                        >
+                                                            <i className="fa fa-exclamation" />
+                                                        </Button>
+                                                        </Link>
+                                                    </Col>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </Table>: null }
                                 </TabPane>
                                 <TabPane tabId="3">
-                                    { this.state.activeTab == 3 ?  <><br/><p>Rua 1 de Maio, Feira VI, Feira de Santana - BA</p></>: null }
+                                    { this.state.activeTab == 3 ?  <><br/> <h6 className="text-muted"> Endereço</h6><p className="py-2">Rua 1 de Maio, Feira VI, Feira de Santana - BA</p></>: null }
                                 </TabPane>
                                 <TabPane tabId="4">
-                                    { this.state.activeTab == 4 ?  <><br/><p>Atente em outro munícipio</p></>: null }
+                                    { this.state.activeTab == 4 ?  <><br/> <h6 className="text-muted"> Comentário I: </h6><p>Atente em outro munícipio</p></>: null }
                                 </TabPane>
                             </TabContent>                        
                            
